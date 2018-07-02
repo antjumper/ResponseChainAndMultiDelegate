@@ -20,7 +20,7 @@
 
 @property (nonatomic,strong) CustomView2 *view2;
 
-@property (strong, nonatomic) MultipleDelegateObject *helper;
+@property (strong, nonatomic) MultipleDelegateObject *helper;//必须强制持有  否者被释放了
 
 
 @end
