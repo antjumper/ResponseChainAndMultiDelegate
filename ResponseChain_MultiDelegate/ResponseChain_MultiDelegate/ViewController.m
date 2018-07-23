@@ -25,11 +25,14 @@
 
 @end
 
+
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     
     self.customView = [[CustomeView alloc] initWithFrame:CGRectMake(00, 0, 50, 50)];
     
@@ -49,12 +52,13 @@
     
 }
 
+
 - (void)customView2:(CustomView2 *)view2 clickedWith:(UIButton *) button userInformation:(NSDictionary *)dict {
     NSLog(@"点击了绿色按钮");
     
     
 }
-
+//redButtonClick:userInformation:
 - (NSInteger)redButtonClick:(UIButton *)btn userInformation:(NSDictionary *)dict{
     
     NSLog(@"点击了红色按钮");
